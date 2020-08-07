@@ -1,0 +1,368 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------------------------------HEADER------------------------------------------------*/
+.flex-container{
+    background-color: #000000;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 50px;
+    
+}
+
+.menu-nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    
+}
+
+.menu-nav a{
+    text-decoration: none;
+    padding: 23px;
+    font-size: 18px;
+    color: #ffffff;
+    
+}
+
+.menu-nav a:hover{
+color: rgb(16, 174, 185);
+
+}
+/*-------- Fim cabeçalho --------*/
+
+/*-------- começo da capa --------*/
+
+.capa{
+    background-image: url(../imagem/debaixo.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-capa{
+    max-width: 600px;
+    font-size: 50px;
+    font-style: italic;
+    font: bold;
+    color: black;
+    border-bottom: 3px solid white;
+    margin-bottom: 25px;
+    
+}
+
+.capa h1{
+    margin-bottom: 0px;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.capa .botao{
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 50px;
+    border-radius: 25px;
+    background-color:rgba(118, 143, 226, 0.466);
+    margin-top: 6px;
+}
+
+.capa .botao:hover{
+    background-color: rgb(88, 152, 235);
+    border: none;
+}
+
+/*---------Fim da capa-----------*/
+
+/*-------- Sobre ODS -----------*/
+
+.ods{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+ 
+}
+
+.image{
+    flex: 50%;
+    padding: 0px 50px;
+    width: 100%;
+    text-align: center;
+    
+}
+.sobre-ods{
+
+    flex: 50%;
+    padding: 0px 50px;
+
+}
+
+.sobre-ods h1{
+    font-size: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.sobre-ods p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+/*-------- Fim Sobre ODS -------*/
+
+/*------------ Começo ODS - Água ----------*/
+
+.ODS-vida{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+    background-color: rgb(219, 239, 255);
+    flex-wrap: wrap;
+}
+
+.imagem{
+    flex: 50%;
+    padding: 0px 50px;
+    width: 100%;
+    text-align: center;
+}
+.sobreods-vida{
+
+    flex: 50%;
+    padding: 0px 50px;
+    
+
+}
+
+.sobreods-vida h1{
+    font-size: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.sobreods-vida p{
+    text-align: justify;
+    font-size: 17px;
+}
+
+/*----------- Fim ODS Água -----------*/
+
+/*---------------- Começo Objetivos -------------*/
+
+.sobre-objetivos h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.sobre-objetivos p{
+    text-align: justify;
+    padding: 0 50px 0 50px;
+}
+
+.imagem-agua{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.link{
+    text-decoration: none;
+    border: 3px solid rgb(165, 161, 161);
+    border-radius: 30px;
+    font-size: 20px;
+    color: black;
+    padding: 3px;
+   
+}
+
+.link-d{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.link:hover{
+    background-color: rgb(165, 161, 161);
+    
+}
+
+/*------------- FIm dos objetivos ------------*/
+
+/*------------- Começo do SObre mim ----------*/
+.sobre-mim{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0px 20px 0px;
+    margin-top: 50px;
+    background: rgb(219, 239, 255);
+}
+
+.sobre-mim h1{
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 0;
+   
+}
+
+.sobre-mim p{
+    text-align: justify;
+}
+
+.imagem-eu{
+    flex: 50%;
+   
+    width: 100%;
+    text-align: center;
+}
+.sobre-mim h1{
+    font-size: 30px;
+    text-align: center;
+    font-size: 35px;
+
+}
+.container-sobre{
+    flex: 50%;
+    padding: 0px 50px;
+    align-items: center;
+    padding: 0 150px 0 150px;
+    flex-wrap: wrap;
+}
+
+/*------------- Começo do SObre mim ----------*/
+
+
+/*-------------- Começo Rodapé ------------*/
+
+.rodape{
+    text-align: center;
+    background-color: rgb(77, 216, 235);
+    padding: 20px;
+}
+
+/*--------------------------------- Responsividade -----------------*/
+
+@media (max-width:760px){
+    /*.flex-container{
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }*/
+    .flex-container{
+        padding: 0;
+        padding-left: 65px;
+    }
+    .menu-nav{
+        display: none;
+    }
+
+    .flex-container img{
+        padding: 0 0 0 150px;
+    }
+
+
+    .menu-nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu-nav a{
+        padding: 2px;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+        padding-right: 43px;
+    }
+    
+/*----------------------- fim cabeçalho -----------------*/
+
+/*----------------------- ODS-----------------*/
+    .ods{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .image{
+        padding-left: 0;
+        padding-right:0;
+    }
+    .ods img{
+        flex-direction: column;
+       
+        width: 80%;
+    }
+
+    .sobreods-vida{
+        padding-left: 64px;
+    }
+
+    .sobre-ods{
+        flex-direction: column;
+    }
+
+    .ods h1{
+        padding: 0 0 0  20px;
+    }
+
+    .ods p{
+        padding: 0 0 0 15px;
+    }
+    
+    /*----------------------- fim da ODS-----------------*/
+    /*-----------------------ODS Vida na Agua-----------------*/
+
+    .sobreods-vida{
+        padding: 0 50px 0 50px;
+    }
+
+    .sobre-ods h1{
+        padding-left: 0;
+
+    }
+
+    .sobre-ods p{
+        padding-left: 0px;
+    }
+
+    .imagem img{
+        width: 100%;
+    }
+
+    /*----------------------- fim Ods Vida na Agua-----------------*/
+    /*-----------------------objetivos-----------------*/
+
+    .imagem-agua{
+        padding: none;
+    }
+
+    .imagem-agua img{
+        width: 80%;
+    }
+
+    .sobre-objetivos{
+        padding: 0 20px 0 20px;
+    }
+    /*----------------------- fim objetivos-----------------*/
+    /*----------------------- Sobre mim -----------------*/
+
+    .sobre-mim{
+        flex-direction: column;
+    }
+
+    .container-sobre{
+        padding: 0 50px 0 50px;
+    }
+    
+
+
+
+}
